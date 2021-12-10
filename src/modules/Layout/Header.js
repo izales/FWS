@@ -13,7 +13,7 @@ function Header(props) {
     const [activeSol, setActiveSol] = useState(false);
     const toggleSol = () => setActiveSol(!activeSol);
     let visSol = activeSol === false ? 'dontvisible' : '';
-    
+
 
     useEffect(() => {
         setSlug(window.location.pathname);
@@ -22,9 +22,9 @@ function Header(props) {
     return (
         <div className="navBar">
             <span>
-              
-                    <img className="logo_img"  src={`${toAbsoluteUrl('/media/images/icon_dark.svg')}`} alt={process.env.REACT_APP_NAME} />
-               
+
+                <a href="/"> <img className="logo_img" src={`${toAbsoluteUrl('/media/images/icon_dark.svg')}`} alt={process.env.REACT_APP_NAME} /></a>
+
             </span>
             <span>
                 <input className="menu-btn" type="checkbox" id="menu-btn" />
@@ -32,29 +32,29 @@ function Header(props) {
                 <ul className="menu">
                     <li className="nav_logo_li">
                         <Link to="/">
-                            <img className=""  src={`${toAbsoluteUrl(`/media/images/icon_dark.svg`)}`} alt={process.env.REACT_APP_NAME} />
+                            <img className="" src={`${toAbsoluteUrl(`/media/images/icon_dark.svg`)}`} alt={process.env.REACT_APP_NAME} />
                         </Link>
                     </li>
-                    <li  onClick={toggle}>
-                  
-                            Portfolio
-        
-                        <ul className={`${visPort} mobiledropPort ` }  >
-                        <li><a href="/projects">Jagdschule</a></li>
-                        <li><a href="/projects-two">Will&Apel</a></li>
-                    </ul>
+                    <li onClick={toggle}>
+
+                        Portfolio
+
+                        <ul className={`${visPort} mobiledropPort `}  >
+                            <li><a href="/projects">Jagdschule</a></li>
+                            <li><a href="/projects-two">Will&Apel</a></li>
+                        </ul>
                     </li>
-                    <li  onClick={toggleSol}>
-               
-                       
-                            Solutions
-          
-                        <ul  className={`${visSol} mobiledropPort ` }>
-                        <li><a href="/drohne">Drohnen</a></li>
-                        <li><a href="/imagefilm">Image film</a></li>
-                        <li><a href="/marketing">Marketing</a></li>
-                        <li><a href="/webdesign">Webdesign</a></li>
-                    </ul>
+                    <li onClick={toggleSol}>
+
+
+                        Solutions
+
+                        <ul className={`${visSol} mobiledropPort `}>
+                            <li><a href="/drohne">Drohnen</a></li>
+                            <li><a href="/imagefilm">Image film</a></li>
+                            <li><a href="/marketing">Marketing</a></li>
+                            <li><a href="/webdesign">Webdesign</a></li>
+                        </ul>
                     </li>
                     <li>
                         <Link

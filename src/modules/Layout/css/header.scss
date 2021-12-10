@@ -160,6 +160,7 @@
 
     .navBar .menu {
         display: flex !important;
+        flex-direction: inherit !important;
         clear: none;
         float: right;
         max-height: none;
