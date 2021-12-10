@@ -1,0 +1,249 @@
+@import "../../../style_variables.scss";  
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+ body {
+   
+    margin: 0;
+   // min-height: -webkit-fill-available;
+    
+}
+body.homepage_div{
+   overflow: hidden !important;
+   background-color: black;
+ }
+.solutions_div{
+    overflow: scroll !important;
+    width: 100% !important;
+    height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+
+}
+.homepage_div {
+    
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    
+    //height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    transform-origin: top left;
+     
+
+    .homepage_content {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    .video_div {
+        flex: 2;
+    }
+    
+    // .video_div video {
+    //     width: 100%;
+    //     height: 100vh;
+    //     object-fit: cover;
+    // }
+
+    .block {
+        // width: 1440px;
+        // margin: 50px;
+        
+        // min-height: 100vw;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    // @media (max-width: 1024px) {
+    //     .block {
+    //         width: 1024px;
+    //     }
+    // }
+
+    // @media (max-width: 768px) {
+    //     .block {
+    //         width: 768px;
+    //     }
+    // }
+
+    // @media (max-width: 576px) {
+    //     .block {
+    //         width: 576px;
+    //     }
+    // }
+}
+
+.scroll-horizontal {
+    overflow: auto !important;
+}
+
+.scroll-horizontal > div:first-child {
+    // position: relative !important;
+    // display: -webkit-box !important;
+    width: 100%;
+}
+
+// start for mobile css
+@media (max-width: 500px){
+.awssld__container {
+    padding-bottom: calc(var(--slider-height-percentage) * 3);
+}
+// .title_section{
+//     margin-bottom: 6rem
+// }
+.logo_div {
+    // width: 15rem !important;
+    width: 70% !important;
+}
+
+.logo_div .title {
+    font-size: 35px !important;;
+    width: 21rem !important;
+}
+.nav_links_div {
+    position: relative;
+    margin: 20px 0 0 0 !important;
+    bottom: 0rem;
+    right: 1rem;
+}
+
+.logo_div .sub_title {
+    font-size: 20px !important;
+   
+}
+.agency_div .description_two {
+    display: none;
+}
+}// end of mobiel media css
+// tablet css
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    /* CSS */
+    .awssld__container {
+        padding-bottom: calc(var(--slider-height-percentage) * 3);
+    }
+    .title_section{
+        margin-bottom: 2rem
+    }
+   
+    
+    .logo_div .title {
+        font-size: 50px !important;;
+        width: 21rem !important;
+    }
+    .nav_links_div {
+        position: relative;
+        margin: 0 !important;
+        bottom: 0rem;
+        right: 1rem;
+        top: 2rem;
+    }
+
+   .buttonStyleRight{
+       margin-right: 0.1rem !important;
+       font-size: 12px !important;
+
+   }
+   .lineStyleLeft {
+    height: 5px;
+    width: 1rem !important;
+    position: fixed;
+    left: 0px;
+}
+.lineStyleRight {
+    height: 5px;
+    width: 1rem !important;
+    position: fixed;
+    right: 0px;
+}
+
+   hr:not([size]) {
+    height: 2px;
+}
+  
+
+   .buttonStyleLeft{
+    margin-left: 0.1rem !important;
+    font-size: 12px !important;
+   }
+    
+} // tablett css - end 
+
+
+
+  // fullpage
+.lineStyleLeft{
+ 
+    height: 5px;
+    width: 3rem;
+    position: fixed;
+    left: 0px;
+}
+
+
+
+.lineStyleRight  {
+    height: 5px;
+    width: 3rem;
+    position: fixed;
+   right: 0px;
+ 
+ 
+};
+hr:not([size]) {
+    height: 3px;
+}
+
+
+.title {
+    line-height: 1.1 !important;
+}
+span.sub_title {
+    line-height: 1.2 !important;
+    margin-bottom: 15px;
+}
+
+.lineColor1{
+    color:black;
+
+}
+.lineColor2{
+    color:white;
+}
+
+// ipad quer portrait
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .buttonStyleRight{
+        margin-right: 0.1rem !important;
+        font-size: 12px !important;
+        margin-top: 1rem !important;
+    
+    }
+    .buttonStyleLeft{
+        margin-right: 0.1rem !important;
+        font-size: 12px !important;
+        margin-top: 1rem !important;
+    
+    }
+    /* CSS */
+    
+  }
+// ipad quer landscape
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    .nav_links_div ul li {
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 40px;
+    }
+  }

@@ -1,0 +1,316 @@
+.nav_links_div {
+    margin: 56px 60px 0 0;
+    font-family: "Bodoni 72 Oldstyle";
+    z-index: 2;
+    // flex: 1;
+
+    .menu {
+        display: none !important;
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+
+    .nav_logo_li {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    ul li {
+        list-style-type: none;
+        font-size: 4.4rem;
+        font-weight: 400;
+        letter-spacing: -2.29px;
+        line-height: 75px;
+    }
+    .dropdown{
+       
+        position: absolute;
+       visibility: hidden;
+        right: 25rem;
+        top: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        transition: 0s ;
+
+        
+    } 
+
+    .dropdown2{
+       
+        position: absolute;
+       visibility: hidden;
+        right: 25rem;
+        top: 8.5rem;
+        display: flex;
+        flex-direction: column;
+        transition: 0s ;
+
+        
+    }
+
+    .dropdown3{
+       
+        position: absolute;
+       visibility: hidden;
+        right: 25rem;
+        top: 13rem;
+        display: flex;
+        flex-direction: column;
+        transition: 0s ;
+
+        
+    }
+    .dropdown4{
+       
+        position: absolute;
+       visibility: hidden;
+        right: 25rem;
+        top: 18rem;
+        display: flex;
+        flex-direction: column;
+        transition: 0s ;
+
+        
+    }
+
+    .liPortfolio:hover > .dropdown  {
+      opacity: 1;
+      visibility: visible;
+    }
+    .liSolution:hover > .dropdown2  {
+        opacity: 1;
+        visibility: visible;
+      }
+      .liAgency:hover > .dropdown3  {
+        opacity: 1;
+        visibility: visible;
+      }
+      .liContact:hover > .dropdown4  {
+        opacity: 1;
+        visibility: visible;
+      }
+      
+     .dropdown:not(:hover) {
+        visibility: hidden;
+        transition: visibility 0.2s;
+      }
+      .dropdown3:not(:hover) {
+        visibility: hidden;
+        transition: visibility 0.2s;
+      }
+     
+     .dropdown2:not(:hover) {
+          visibility: hidden;
+          transition: visibility 0.3s;
+       }
+       .dropdown4:not(:hover) {
+        visibility: hidden;
+        transition: visibility 0.2s;
+      }
+
+      .liPortfolio:hover + .liSolution .dropdown2  {
+            display: none;
+            visibility: hidden;
+        }
+        .liSolution:hover + .liAgency .dropdown3  {
+            display: none;
+            visibility: hidden;
+        }
+        .liAgency:hover + .liContact .dropdown4  {
+            display: none;
+            visibility: hidden;
+        }
+
+    .dontvisible{
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+      }
+
+        
+    ul li a {
+        text-decoration: none;
+    }
+    
+    ul li a.selected {
+        color: #ff4f21 !important;
+    }
+    
+    li a {
+        color: #000000;
+    }
+    
+    ul li a:hover {
+        color: #ff4f21;
+    }
+    
+    ul li a:active {
+        color: #ff4f21;
+    }
+
+    /* hide checkbox */
+    .menu-btn {
+        display: none;
+    }
+
+    /* hamburger menu UI */
+    .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+    
+    .menu-icon .theme_dark.navicon {
+        background: #333;
+    }
+    
+    .menu-icon .theme_light.navicon {
+        background: #FFFFFF;
+    }
+    
+    .menu-icon .navicon {
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 25px;
+    }
+
+    .menu-icon .theme_dark.navicon:before,
+    .menu-icon .theme_dark.navicon:after {
+        background: #333;
+    }
+    
+    .menu-icon .theme_light.navicon:before,
+    .menu-icon .theme_light.navicon:after {
+        background: #FFFFFF;
+    }
+    
+    .menu-icon .navicon:before,
+    .menu-icon .navicon:after {
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .menu-icon .navicon:before {
+        top: 8px;
+    }
+
+    .menu-icon .navicon:after {
+        top: -8px;
+    }
+
+    /* display nav-menu on hamburger menu click */
+    .menu-btn:checked ~ .menu {
+        display: flex !important;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content:start;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #FFFFFF;
+        width: 100vw;
+    }
+
+    .menu-btn:checked ~ .menu-icon {
+        margin-top: 45px;
+    }
+
+    /* animate hamburger menu click */
+    .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }
+
+    .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+        background: #333;
+    }
+
+    .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+        background: #333;
+    }
+
+    .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+
+    @media (min-width: 1023px) {
+        .menu {
+            display: flex !important;
+            flex-direction: column;
+            clear: none;
+            float: right;
+            max-height: none;
+        }
+
+        .menu li {
+            float: left;
+        }
+    
+        .menu-icon {
+            display: none;
+        }
+
+        .nav_text_dark li a {
+            color: #000000;
+            text-decoration: none;
+        }
+        
+        .nav_text_light li a {
+            color: #FFFFFF;
+        }
+
+        .nav_logo_li {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        margin: 20px 15px 0 0;
+        
+        ul li {
+            // font-size: 3.4rem;
+            // font-weight: 400;
+            // letter-spacing: -2.29px;
+            // line-height: 55px;
+
+            // font-size: 2.0rem;
+            font-size: 50px;
+            font-weight: 400;
+            letter-spacing: -1px;
+            line-height: 60px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px)  {
+        margin: 20px 15px 0 0;
+       .menu-btn:checked ~ .menu {
+         
+            padding-top: 5rem;
+            padding-left: 7rem;
+        }
+        ul li {
+            // font-size: 3.4rem;
+            // font-weight: 400;
+            // letter-spacing: -2.29px;
+            // line-height: 55px;
+
+            font-size: 4.0rem;
+            font-weight: 400;
+            letter-spacing: -1px;
+            line-height: 66px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+
+
+
+.imprint-pos{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right:20px;
+    z-index: 20;
+    text-decoration: none;
+}
+a:link { color: #000000; text-decoration: none}
+.firstLink{
+
+    margin-right: 10px;
+    color: white;
+
+}
+.nav_text_dark{
+    color: black !important;
+}
+
+.nav_text_light{
+    color: white !important;
+}
+.secondLink{
+    color: white;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  
+    
+
+.imprint-pos{
+    font-size: 10px;
+}
+    
+  }

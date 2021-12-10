@@ -1,0 +1,169 @@
+@import "../../../style_variables.scss";
+
+.contact_us_div {
+    width: 100%;
+    height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    background-color: #576061;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+
+    .contactus-link{
+
+        color:white !important ;
+    }
+
+    .contact_us_body_div {
+        // flex: 2;
+        z-index: 20;
+        margin: 15rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+        //justify-content: space-around;
+    }
+
+    .title_div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .sub_title {
+        // font-size: 1.625rem;
+        color: $custom-secondary;
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 40px;
+        letter-spacing: -0.65px;
+    }
+    
+    .title {
+        color: #FFFFFF;
+        // font-size: 3.125rem;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 54px;
+        letter-spacing: -1.25px;
+        width: 50%;
+    }
+
+    .contact_details_div {
+        color: #FFFFFF;
+        margin-top: 3%;
+        margin-left: 9%;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+    }
+
+    .icon_span {
+        display: flex;
+        align-items: center;
+    }
+    
+    .icon_span img {
+        width: 50px;
+        height: 50px;
+        margin: 1rem 1rem;
+    }
+    
+    .icon_span label {
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: -0.65px;
+    }
+
+    // css for querys
+
+     // mobile css
+     @media (max-width: 576px) {
+       
+        .contact_us_body_div {
+            z-index: 20;
+            order: 3;
+            margin: 0;
+            margin-top: 10rem  !important;
+           
+        }
+
+        .title_div {
+            margin: 0 0 0 15px;
+        }
+    
+        .sub_title {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        
+        .title {
+            font-size: 38px;
+            line-height: 45px;
+            white-space: normal;
+            width: 90vw;
+        }
+
+        .contact_details_div {
+            margin: 30px 0 0 30px;
+        }
+
+        .icon_span label {
+            font-size: 20px;
+        }
+    }// end mobile css
+
+
+    // tablet css
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .title_div {
+            display: flex;
+            flex-direction: column;
+            margin-left: 25%;
+            
+        }
+
+        .contact_details_div {
+            color: #FFFFFF;
+            margin-top: 3%;
+            margin-left: 25%;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.3rem;
+        }
+        .logoTabletV{
+            width: 79% !important;
+        }
+        .title {
+          
+            width: 100%;
+        }
+        /* CSS */
+        
+      } // end tablet
+
+
+     
+
+    @media (max-width: 1024px),
+    (max-width: 768px) {
+        .contact_us_body_div {
+           // order: 3;
+            margin: 0;
+            z-index: 20;
+            margin-top: 21rem;
+            margin-left: -21rem;
+        }
+    }
+
+     // gr desktop
+     @media (min-width: 1025px) {
+        .contact_us_body_div {
+            z-index: 20;
+            flex: 2;
+        }
+    }
+     // end css for querys
+   
+}

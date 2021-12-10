@@ -1,0 +1,205 @@
+@import ".././../../style_variables.scss";
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 56px 62px 0 62px;
+    // z-index: 2;
+    // position: relative;
+    // width: 90%;
+}
+.dontvisible{
+    display: none !important;
+}
+
+.navBar ul {
+    display: flex;
+    //height: 48px;
+    flex-direction: column;
+    font-family: 'Bodoni 72 Oldstyle';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -2.29px;
+    width: 65vw;
+    justify-content: space-between;
+}
+
+.navBar ul li {
+    list-style-type: none;
+}
+
+.navBar ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navBar ul li a:hover {
+    color: $custom-secondary;
+}
+
+.navBar ul li a:active {
+    color: $custom-secondary;
+}
+
+.navBar ul li a.selected {
+    color: $custom-secondary !important;
+}
+
+.nav_logo_li {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 75px;
+}
+
+.navBar .logo_img {
+    width: 73.34px;
+    height: 72.79px;
+    margin-top: 20px;
+}
+
+.navBar .menu {
+    display: none !important;
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.navBar .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+.menu-icon{
+    display:none;
+}
+/* hamburger menu UI */
+.navBar .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 25px;
+}
+
+.navBar .menu-icon .navicon:before,
+.navBar .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.navBar .menu-icon .navicon:before {
+    top: 8px;
+}
+
+.navBar .menu-icon .navicon:after {
+    top: -8px;
+}
+
+/* hide checkbox */
+.navBar .menu-btn {
+    display: none;
+}
+
+/* display nav-menu on hamburger menu click */
+.navBar .menu-btn:checked ~ .menu {
+    display: flex !important;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content:start;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    width: 100vw;
+    z-index: 2;
+}
+
+/* animate hamburger menu click */
+.navBar .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.navBar .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.navBar .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.navBar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navBar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+@media (min-width: 768px) {
+    .navBar ul {
+        width: 487px;
+    }
+
+    .navBar li {
+        float: left;
+    }
+
+    // .navBar li a {
+    //     padding: 20px 30px;
+    // }
+
+    .navBar .menu {
+        display: flex !important;
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .navBar .menu-icon {
+        display: none;
+    }
+
+    .navBar ul {
+        line-height: 77px;
+    }
+
+    .nav_logo_li {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .navBar {
+        margin: 20px 15px 0 15px;
+    }
+    .mobiledrop{
+        display: flex;
+        flex-direction: column !important;
+    }
+    ul li {
+        font-size: 50px;
+        font-weight: 400;
+        letter-spacing: -1px;
+        line-height: 60px;
+    }
+}
+
+
+@media (max-height: 520) {
+    .navBar ul {
+      
+        font-size: 48px;
+   
+    }
+    
+}
