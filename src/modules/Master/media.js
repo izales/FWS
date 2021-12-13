@@ -39,7 +39,7 @@ export const PortFolioTwo = withNavigationContext(() => {
                     <source src={toAbsoluteUrl("/media/video/Will&Apel_Reel.mp4")} type="video/mp4"></source>
                 </video>
                 <ImprintLink theme="light"
-                
+
                 ></ImprintLink>
             </div>
 
@@ -56,8 +56,8 @@ export const PortFolioOne = withNavigationContext(() => {
                 showBottomNav={true}
                 pageTitle="Portfolio"
                 subTitle="Showreel"
-                title={["FSW Media Showreel 2020"]}
-                
+                title={["FSW Media Showreel 2021"]}
+
 
             />
 
@@ -89,38 +89,38 @@ export const PortFolioOne = withNavigationContext(() => {
 export const PortFolioThree = withNavigationContext(() => {
     return (
         <div className="homepage_content" style={{ width: '100%', height: `100vh` }}>
-        <LogoComponent
-            theme="light"
-            showBottomNav={true}
-            pageTitle="Portfolio"
-            subTitle="Imagefilm"
-            title={["Imagefilm für Jagdschule"]}
-            
+            <LogoComponent
+                theme="light"
+                showBottomNav={true}
+                pageTitle="Portfolio"
+                subTitle="Imagefilm"
+                title={["Imagefilm für Jagdschule"]}
 
-        />
 
-        <div className="video_div">
-            <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                style={{
-                    position: "absolute",
-                    width: "100%",
-                    left: "50%",
-                    top: "50%",
-                    height: "100%",
-                    objectFit: "cover",
-                    transform: "translate(-50%,-50%)",
-                }}>
-                <source src={toAbsoluteUrl("/media/video/Rainer Wiese Werbeclip (comprimiert).mp4")} type="video/mp4"></source>
-            </video>
-            <ImprintLink theme="dark"></ImprintLink>
+            />
+
+            <div className="video_div">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={{
+                        position: "absolute",
+                        width: "100%",
+                        left: "50%",
+                        top: "50%",
+                        height: "100%",
+                        objectFit: "cover",
+                        transform: "translate(-50%,-50%)",
+                    }}>
+                    <source src={toAbsoluteUrl("/media/video/Rainer Wiese Werbeclip (comprimiert).mp4")} type="video/mp4"></source>
+                </video>
+                <ImprintLink theme="dark"></ImprintLink>
+            </div>
+
+            <NavComponent theme="light" />
         </div>
-
-        <NavComponent theme="light" />
-    </div>
     );
 });
 

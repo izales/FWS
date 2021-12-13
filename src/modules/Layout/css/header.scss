@@ -29,6 +29,7 @@
 
 .navBar ul li {
     list-style-type: none;
+    margin: 10px;
 }
 
 .navBar ul li a {
@@ -147,7 +148,7 @@
 
 @media (min-width: 768px) {
     .navBar ul {
-        width: 487px;
+        width: 100%;
     }
 
     .navBar li {
@@ -172,10 +173,13 @@
 
     .navBar ul {
         line-height: 77px;
+        padding-left: 0px !important;
+
     }
 
     .nav_logo_li {
         display: none;
+
     }
 }
 
