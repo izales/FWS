@@ -253,6 +253,8 @@
     }
 
     @media (min-width: 1023px) {
+        z-index: 2;
+        height: 30vh;
         .menu {
             display: flex !important;
             flex-direction: column;
