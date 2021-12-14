@@ -78,6 +78,7 @@
     }
 
     @media (max-width: 576px) {
+        z-index: 0;
         margin: 20px 0 56px 15px;
       .logo_img{
         width: 70px !important;

@@ -101,7 +101,7 @@ body.homepage_div{
 // }
 .logo_div {
     // width: 15rem !important;
-    width: 70% !important;
+   // width: 70% !important;
 }
 
 .logo_div .title {
@@ -112,8 +112,8 @@ body.homepage_div{
     position: relative;
     margin: 20px 0 0 0 !important;
     bottom: 0rem;
-    right: 1rem;
-    z-index: 0;
+    right: -7rem;
+    z-index: 0 !important;
 }
 
 .logo_div .sub_title {
