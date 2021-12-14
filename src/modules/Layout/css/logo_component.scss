@@ -79,7 +79,9 @@
 
     @media (max-width: 576px) {
         margin: 20px 0 56px 15px;
-
+      .logo_img{
+        width: 70px !important;
+      }
         
         .title_section {
             margin-bottom: 40%;

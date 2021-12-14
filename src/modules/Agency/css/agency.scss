@@ -181,7 +181,7 @@
             position: relative;
             order: 0;
             margin: 0 0 0 15px;
-            margin-left: -20rem !important;
+            z-index: 0;
             margin-top: 8rem;
         }
 
@@ -192,7 +192,7 @@
         .sub_title {
             position: relative;
             top: 0;
-            font-size: 20px;
+            font-size: 20px !important;
             line-height: 30px;
             height: auto;
         }
@@ -371,12 +371,15 @@
 
      // up zu tablet
      @media (max-width: 768px) {
-        
+       
         .agency_body_div {
             position: relative;
+            right: 50px;
+
+            z-index: 0;
             //order: 2;
            // margin: 0 0 0 60px;
-           margin-left: -14rem;
+           margin-left: 0rem;
         }
 
         .title_div {
@@ -387,6 +390,7 @@
         .sub_title {
             position: relative;
             top: 0;
+            margin-top: 45px;
         }
         
         .title {
