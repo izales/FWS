@@ -36,10 +36,10 @@ function Projects(props) {
                 <div className="nav_button_div">
                     <div className="left_nav_span ">
                         <img className="left_nav_img" src={`${toAbsoluteUrl(`/media/icons/arrow-left-grey.svg`)}`} alt="Left" />
-                        <Link to="/" > <span className="left_nav_label">Back to Overview</span></Link>
+                        <Link to="/" > <span className="left_nav_label">Zurück zur Overview</span></Link>
                     </div>
                     <div className="right_nav_span">
-                        <Link to="/projects-two" ><span className="right_nav_label">Next Project</span></Link>
+                        <Link to="/projects-two" ><span className="right_nav_label">nächstes Projekt</span></Link>
                         <img className="right_nav_img" src={`${toAbsoluteUrl(`/media/icons/arrow-right-grey.svg`)}`} alt="Right" />
                     </div>
                 </div>
