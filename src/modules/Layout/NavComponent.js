@@ -68,7 +68,7 @@ function NavComponent(props) {
                     </Link>
 
                     <ul   onMouseOver={toggleHoverPort} onMouseLeave={toggleHoverPort}  className={`${visPort}  dropdown`}>
-                        <li><a href="/projects">Showreel</a></li>
+                        <li><a href="/projects">Showreel</a><img className='pfeil_links' src={`${toAbsoluteUrl(`/media/icons/linker-pfeil-schwarze-dreiecksform.svg`)}`} alt="Right" /></li>
                         <li><a href="/projects-three">Jagdschule</a></li>
                         <li><a href="/projects-two">Will&Apel</a></li>
                     </ul>
