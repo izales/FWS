@@ -10,6 +10,14 @@ function NavComponent(props) {
     let navTheme = props.theme === 'dark' ? 'theme_dark' : 'theme_light';
 
 
+
+    const [hoveredPort, setHoveredPort] = useState(false);
+    const toggleHoverPort = () => setHoveredPort(!hoveredPort);
+    let visOne = hoveredPort === true ? 'visible' : '';
+    let visSol2 = hoveredPort === true ? 'dontvisible' : '';
+
+
+
     const [hoveredSolution, setHoveredSolution] = useState(false);
     const toggleHoverSolution = () => setHoveredSolution(!hoveredSolution);
     let visPort = hoveredSolution === true ? 'dontvisible' : '';
@@ -59,9 +67,9 @@ function NavComponent(props) {
                         Portfolio
                     </Link>
 
-                    <ul ref={PortRef} className={`${visPort} dropdown`}>
-
-                        <li><a href="/projects">Jagdschule</a></li>
+                    <ul   onMouseOver={toggleHoverPort} onMouseLeave={toggleHoverPort}  className={`${visPort}  dropdown`}>
+                        <li><a href="/projects">Showreel</a></li>
+                        <li><a href="/projects-three">Jagdschule</a></li>
                         <li><a href="/projects-two">Will&Apel</a></li>
                     </ul>
                 </li>
@@ -74,9 +82,9 @@ function NavComponent(props) {
                     >
                         <span className='pfeil-span'>Solutions</span>
                     </Link>
-                    <ul className={`${visSol} dropdown2`}>
-                        <img className='pfeil_links' src={`${toAbsoluteUrl(`/media/icons/linker-pfeil.svg`)}`} alt="Right" />
-                        <li><a href="/drohne">Drohnen</a></li>
+                    <ul className={`${visSol}  dropdown2`}>
+                        
+                        <li><a href="/drohne">Drohnen</a><img className='pfeil_links' src={`${toAbsoluteUrl(`/media/icons/linker-pfeil-schwarze-dreiecksform.svg`)}`} alt="Right" /></li>
                         <li><a href="/imagefilm">Image film</a></li>
                         <li><a href="/marketing">Marketing</a></li>
                         <li><a href="/webdesign">Webdesign</a></li>
