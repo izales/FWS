@@ -37,17 +37,19 @@ function Header(props) {
                     </li>
                     <li onClick={toggle}>
 
-                        Portfolio
+                        <span className='icon_hover'> Portfolio</span>
 
                         <ul className={`${visPort} mobiledropPort `}  >
-                            <li><a href="/projects">Jagdschule</a></li>
+                            <li><a href="/projects">Showreel</a></li>
                             <li><a href="/projects-two">Will&Apel</a></li>
+                            <li><a href="/projects-three">Jagdschule</a></li>
+
                         </ul>
                     </li>
                     <li onClick={toggleSol}>
 
 
-                        Solutions
+                        <span className='icon_hover'> Solutions</span>
 
                         <ul className={`${visSol} mobiledropPort `}>
                             <li><a href="/drohne">Drohnen</a></li>

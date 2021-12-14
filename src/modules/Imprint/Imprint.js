@@ -83,7 +83,7 @@ function Projects(props) {
 
                     <Link className="footer-link" to="/solutions"> Our Solutions </Link>
                     <Link className="footer-link" to="/agency">   Our Agency</Link>
-                    <a href="/" className="anchorFour"><img src={`${toAbsoluteUrl('/media/images/icon_dark.svg')}`} alt={process.env.REACT_APP_NAME} /></a>
+                    <a href="/" className="anchorFour"><img className='icon_size' src={`${toAbsoluteUrl('/media/images/icon_dark.svg')}`} alt={process.env.REACT_APP_NAME} /></a>
                     <Link className="footer-link" to="/contact-us">   Contact</Link>
                     <Link className="footer-link" to="/imprint">  Imprint</Link>
                     <Link className="footer-link" to="/imprint">Datasecure</Link>
