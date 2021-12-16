@@ -10,16 +10,21 @@ import Drohne from './modules/Projects/Drohne'
 import Imagefilm from './modules/Projects/Imagefilm'
 import Marketing from './modules/Projects/Marketing'
 import Webdesign from './modules/Projects/Webdesign'
+import Productfilm from './modules/Projects/Productfilm';
+import Jagdfilm from './modules/Projects/Jagdfilm';
+
 function Routes(props) {
 
 
   return (
     <Switch>
-      <Route exact path="/" component={Master} />
-      <Route path="/drohne" component={Drohne}/>
-      <Route path="/marketing" component={Marketing}/>
-      <Route path="/webdesign" component={Webdesign}/>
-      <Route path="/imagefilm" component={Imagefilm}/>
+      <Route exact path="/" component={Master} />‚
+      <Route path="/drohne" component={Drohne} />
+      <Route path="/marketing" component={Marketing} />
+      <Route path="/webdesign" component={Webdesign} />
+      <Route path="/imagefilm" component={Imagefilm} />
+      <Route path="/productfilm" component={Productfilm} />
+      <Route path="/jagdfilm" component={Jagdfilm} />
       <Route path="/projects" component={Projects} />
       <Route path="/projects-two" component={ProjectsTwo} />
       <Route path="/projects-three" component={ProjectsThree} />

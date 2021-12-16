@@ -67,7 +67,7 @@ function NavComponent(props) {
                         Portfolio
                     </Link>
 
-                    <ul   onMouseOver={toggleHoverPort} onMouseLeave={toggleHoverPort}  className={`${visPort}  dropdown`}>
+                    <ul onMouseOver={toggleHoverPort} onMouseLeave={toggleHoverPort} className={`${visPort}  dropdown`}>
                         <li><a href="/projects">Showreel</a><img className='pfeil_links' src={`${toAbsoluteUrl(`/media/icons/linker-pfeil-schwarze-dreiecksform.svg`)}`} alt="Right" /></li>
                         <li><a href="/projects-three">Jagdschule</a></li>
                         <li><a href="/projects-two">Will&Apel</a></li>
@@ -83,10 +83,12 @@ function NavComponent(props) {
                         <span className='pfeil-span'>Solutions</span>
                     </Link>
                     <ul className={`${visSol}  dropdown2`}>
-                        
-                        <li><a href="/drohne">Drohnen</a><img className='pfeil_links' src={`${toAbsoluteUrl(`/media/icons/linker-pfeil-schwarze-dreiecksform.svg`)}`} alt="Right" /></li>
-                        <li><a href="/imagefilm">Image film</a></li>
+
+                        <li><a href="/imagefilm">Imagefilm</a><img className='pfeil_links' src={`${toAbsoluteUrl(`/media/icons/linker-pfeil-schwarze-dreiecksform.svg`)}`} alt="Right" /></li>
+                        <li><a href="/jagdfilm">Jagdfilm</a></li>
+                        <li><a href="/imagefilm">Productfilm</a></li>
                         <li><a href="/marketing">Marketing</a></li>
+                        <li><a href="/drohne">Drohnen</a></li>
                         <li><a href="/webdesign">Webdesign</a></li>
                     </ul>
                 </li>
