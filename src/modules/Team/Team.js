@@ -55,7 +55,6 @@ function Team(props) {
     return (
         <div className="solutions_div_team">
 
-
             <div className="solutions_body_div">
 
 
