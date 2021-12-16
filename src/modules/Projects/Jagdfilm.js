@@ -28,7 +28,7 @@ function Jagdfilm(props) {
                 //     // zIndex: "-1"
                 // }}
                 >
-                    <source src={toAbsoluteUrl("/media/video/product-reel2.mp4")} type="video/mp4"></source>
+                    <source src={toAbsoluteUrl("/media/video/Jagd_Reel.mp4")} type="video/mp4"></source>
                 </video>
             </div>
 
@@ -45,8 +45,8 @@ function Jagdfilm(props) {
                 </div>
 
                 <div className="title_div">
-                    <span className="sub_title">Produktfilm</span>
-                    <span className="title">Für Ihren Online Verkauf<br></br></span>
+                    <span className="sub_title">Jagdfilm</span>
+                    <span className="title">Einfangen von spannenden Jagdmomenten<br></br></span>
                 </div>
 
 
@@ -60,14 +60,14 @@ function Jagdfilm(props) {
 
             <div className="section_four">
                 <div className="row_four">
-                    <p>Wer online kauft, will vorher die Ware sehen. Produktvideos machen aus Shoppern zahlende Kunden. Egal, ob auf Amazon, Instagram oder in Ihrem eigenen E-Commerce-Shop. Unsere Videos setzen Ihre Produkte gekonnt in Szene und sorgen für Kaufentscheidungen. Schnell produziert sind sie außerdem. Übrigens: Auch Suchmaschinen lieben Produktvideos. </p>
+                    <p>Eine unserer größten Stärken ist das Einfangen von spannenden Jagdmomenten. Diese sind vielfältig nutzbar: Als Erinnerung an ein großes Abenteuer, als Werbefilm für ihre Jagddienstleistungen oder für den Einsatz in Social Media. Diese Werke beeindrucken.  </p>
                 </div>
 
             </div>
 
             <div className="section_five">
-                <img src={`${toAbsoluteUrl(`/media/images/bogen.jpg`)}`} alt="Image" />
-                <img src={`${toAbsoluteUrl(`/media/images/spitz.jpg`)}`} alt="Image" />
+                <img src={`${toAbsoluteUrl(`/media/images/wueste.jpg`)}`} alt="Image" />
+                <img src={`${toAbsoluteUrl(`/media/images/hund.jpg`)}`} alt="Image" />
             </div>
 
             <div className="section_six">

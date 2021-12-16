@@ -84,10 +84,12 @@
     .liPortfolio:hover > .dropdown  {
       opacity: 1;
       visibility: visible;
+      background-color: #b9b9b9;
     }
     .liSolution:hover > .dropdown2  {
         opacity: 1;
         visibility: visible;
+        background-color: #b9b9b9;
       }
       .liAgency:hover > .dropdown3  {
         opacity: 1;
@@ -302,13 +304,25 @@
             line-height: 60px;
         }
     }
-    @media (min-width: 1920px) {
+    @media (max-width: 576px) {
    
     
-    .nav_links_div .dropdown{
-       
-
-    }
+         .dropdown{
+            position: relative;
+            visibility: inherit !important;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            right: 0;
+         }
+         .dropdown2{
+            visibility: inherit !important;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            right: 0;
+         }
 
     }
     @media (min-width: 768px) and (max-width: 1024px)  {
