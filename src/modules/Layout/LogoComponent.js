@@ -10,7 +10,7 @@ function LogoComponent(props) {
     }, [window.location.pathname]);
     const [project, setProject] = useState("projects")
     const [displayBottomNav, setDisplayBottomNav] = useState(false);
-    const [componentWidth, setComponentWidth] = useState('775px');
+    const [componentWidth, setComponentWidth] = useState('35%');
 
     useEffect(() => {
         let showBottomNav = props.showBottomNav ? true : false;
@@ -20,30 +20,30 @@ function LogoComponent(props) {
         setDisplayBottomNav(showBottomNav);
 
 
-        if(slug === "/") {
+        if (slug === "/") {
             console.log("port1");
-           
-          
-        } else if (slug === "/portfolio-two")
-        {   console.log("port2");
-        setProject("projects-two") 
-       
-      
+
+
+        } else if (slug === "/portfolio-two") {
+            console.log("port2");
+            setProject("projects-two")
+
+
         } else if (slug === "/portfolio-three") {
             console.log("port3");
-          setProject("/projects-three")
-           
+            setProject("/projects-three")
+
         }
     });
-    
-  
 
-   
+
+
+
     //          <span className="page_title">{"props.pageTitle" || ""}</span> rausgenommen 18 Okt.
     return (
         <div className="logo_div" style={{ width: `${componentWidth}` }}>
             <div className="">
-                <a href="/"><img   className="logo_img"  src={`${toAbsoluteUrl(`/media/images/icon_${props.theme}.svg`)}`} alt={process.env.REACT_APP_NAME} /></a>
+                <a href="/"><img className="logo_img" src={`${toAbsoluteUrl(`/media/images/icon_${props.theme}.svg`)}`} alt={process.env.REACT_APP_NAME} /></a>
                 <span className="">{"" || ""}</span>
             </div>
 

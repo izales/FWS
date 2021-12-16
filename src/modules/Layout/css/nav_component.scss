@@ -1,7 +1,7 @@
 .nav_links_div {
     margin: 56px 60px 0 0;
     font-family: "Bodoni 72 Oldstyle";
-    z-index: 0;
+    z-index: 2;
     // flex: 1;
 
     .menu {
@@ -9,6 +9,7 @@
         clear: both;
         max-height: 0;
         transition: max-height .2s ease-out;
+        z-index: 2;
     }
     .pfeil_links{
         width: 20px;
@@ -25,10 +26,10 @@
 
     ul li {
         list-style-type: none;
-        font-size: 4.4rem;
+        font-size: 3.2rem;
         font-weight: 400;
         letter-spacing: -2.29px;
-        line-height: 75px;
+        line-height: 65px;
     }
     .dropdown{
        
@@ -84,12 +85,12 @@
     .liPortfolio:hover > .dropdown  {
       opacity: 1;
       visibility: visible;
-      background-color: #b9b9b9;
+      
     }
     .liSolution:hover > .dropdown2  {
         opacity: 1;
         visibility: visible;
-        background-color: #b9b9b9;
+       
       }
       .liAgency:hover > .dropdown3  {
         opacity: 1;
@@ -264,6 +265,7 @@
             clear: none;
             float: right;
             max-height: none;
+            z-index: 2;
         }
 
         .menu li {
@@ -307,7 +309,7 @@
     @media (max-width: 576px) {
    
     
-         .dropdown{
+        .liPortfolio:active > .dropdown{
             position: relative;
             visibility: inherit !important;
             display: flex;

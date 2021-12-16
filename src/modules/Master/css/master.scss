@@ -91,6 +91,8 @@ body.homepage_div{
     width: 100%;
 }
 
+
+
 // start for mobile css
 @media (max-width: 500px){
     .logo_div {
@@ -118,7 +120,7 @@ body.homepage_div{
     margin: 20px 0 0 0 !important;
     bottom: 0rem;
     right: 1rem;
-    z-index: 0 !important;
+    z-index: 2 !important;
 }
 
 .logo_div .sub_title {

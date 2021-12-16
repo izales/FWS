@@ -5,6 +5,11 @@ import { Link } from "react-awesome-slider/dist/navigation";
 import { toAbsoluteUrl } from '../../_helpers/AssetsHelpers';
 
 function NavComponent(props) {
+
+    const [PortLink, setPortLink] = useState("/")
+
+
+
     const [slug, setSlug] = useState("/");
     let textClass = props.theme === 'dark' ? 'nav_text_dark' : 'nav_text_light';
     let navTheme = props.theme === 'dark' ? 'theme_dark' : 'theme_light';
@@ -61,7 +66,7 @@ function NavComponent(props) {
 
                 <li className="liPortfolio">
                     <Link
-                        href="/"
+                        href={PortLink}
                         className={(slug === "" || slug === "/" || slug === "/portfolio-two" || slug === "/portfolio-three") ? "selected" : null}
                     >
                         Portfolio
