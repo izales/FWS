@@ -86,7 +86,7 @@ function NavComponent(props) {
 
                         <li><a href="/imagefilm">Imagefilm</a><img className='pfeil_links' src={`${toAbsoluteUrl(`/media/icons/linker-pfeil-schwarze-dreiecksform.svg`)}`} alt="Right" /></li>
                         <li><a href="/jagdfilm">Jagdfilm</a></li>
-                        <li><a href="/imagefilm">Productfilm</a></li>
+                        <li><a href="/productfilm">Productfilm</a></li>
                         <li><a href="/marketing">Marketing</a></li>
                         <li><a href="/drohne">Drohnen</a></li>
                         <li><a href="/webdesign">Webdesign</a></li>
