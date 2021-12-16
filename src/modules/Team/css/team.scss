@@ -75,8 +75,8 @@
     }
 
 .solutions_div_team {
-    height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
+ //   height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+ //   height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     //height: 100%;
 
@@ -235,6 +235,15 @@
         }
     }
     
+    @media(max-width: 1704px) {
+        .icons_div{
+            flex-wrap: wrap;
+           
+        }
+        .icon_span img {
+            width: 180px;
+        }
+    }
     @media(max-width: 1023px) {
        
         .solutions_body_div {
