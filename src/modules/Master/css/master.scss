@@ -93,6 +93,10 @@ body.homepage_div{
 
 // start for mobile css
 @media (max-width: 500px){
+    .logo_div {
+        
+        width: 10% !important;
+    }
 .awssld__container {
     padding-bottom: calc(var(--slider-height-percentage) * 3);
 }
