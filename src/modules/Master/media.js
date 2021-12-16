@@ -78,7 +78,7 @@ export const PortFolioOne = withNavigationContext(() => {
                     }}>
                     <source src={toAbsoluteUrl("/media/video/homepage-banner-reel2.mp4")} type="video/mp4"></source>
                 </video>
-                <ImprintLink theme="dark"></ImprintLink>
+                <ImprintLink theme="light"></ImprintLink>
             </div>
 
             <NavComponent theme="light" />
@@ -116,7 +116,7 @@ export const PortFolioThree = withNavigationContext(() => {
                     }}>
                     <source src={toAbsoluteUrl("/media/video/Rainer Wiese Werbeclip (comprimiert).mp4")} type="video/mp4"></source>
                 </video>
-                <ImprintLink theme="dark"></ImprintLink>
+                <ImprintLink theme="light"></ImprintLink>
             </div>
 
             <NavComponent theme="light" />

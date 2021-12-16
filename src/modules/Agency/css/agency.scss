@@ -5,7 +5,7 @@
     height: calc(var(--vh, 1vh) * 100);
     background-color: #000000;
     display: flex;
-  
+    justify-content: space-between;
 
     .agency_body_div {
         // flex: 2;
@@ -15,6 +15,7 @@
         width: 58%;
         justify-content: center;
         z-index: 2;
+
      
     }
    
