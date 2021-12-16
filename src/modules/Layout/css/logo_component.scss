@@ -76,7 +76,11 @@
             display: none;
         }
     }
-
+    @media (min-width: 776px) and (max-width:1024px) {
+        
+            flex: 2 !important;
+        
+    }
     @media (max-width: 576px) {
         z-index: 0;
         margin: 20px 0 56px 15px;
