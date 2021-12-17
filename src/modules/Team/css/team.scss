@@ -379,6 +379,23 @@
             display: none  !important;
         }
     } // end tablet css
+
+    @media(min-width: 1025px)  and (max-width: 1704px) {
+        .description_title{
+            position: relative;
+            right: 3rem
+        }
+        .description_text{
+            position: relative;
+            right: 3rem;
+            font-size: 10px;
+            width: 138px;
+        }
+        .icon_description{
+            width: 180px;
+            height: 180px;
+        }
+    }
     @media(max-width: 1024px) {
 
         .icon_description{
@@ -438,7 +455,7 @@
             top: 0;
             left: 0;
            
-            z-index: 0;
+           
             width: 100% !important;
             height: 100%;
             z-index: 10;

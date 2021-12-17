@@ -37,10 +37,10 @@ function Projects(props) {
                 <div className="nav_button_div">
                     <div className="left_nav_span ">
                         <img className="left_nav_img" src={`${toAbsoluteUrl(`/media/icons/arrow-left-grey.svg`)}`} alt="Left" />
-                        <Link to="/drohne" > <span className="left_nav_label">Previous Project</span></Link>
+                        <Link to="/" > <span className="left_nav_label">Zurück zur Startseite</span></Link>
                     </div>
                     <div className="right_nav_span">
-                        <Link to="/marketing" ><span className="right_nav_label">Next Project</span></Link>
+                        <Link to="/jagdfilm" ><span className="right_nav_label">Nächstes Projekt</span></Link>
                         <img className="right_nav_img" src={`${toAbsoluteUrl(`/media/icons/arrow-right-grey.svg`)}`} alt="Right" />
                     </div>
                 </div>

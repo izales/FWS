@@ -39,7 +39,7 @@ function ProjectsThree(props) {
                         <Link to="/projects-two" > <span className="left_nav_label">vorheriges Projekt</span></Link>
                     </div>
                     <div className="right_nav_span">
-                        <Link to="/" ><span className="right_nav_label">zurück zur Overview</span></Link>
+                        <Link to="/" ><span className="right_nav_label">zurück zur Startseite</span></Link>
                         <img className="right_nav_img" src={`${toAbsoluteUrl(`/media/icons/arrow-right-grey.svg`)}`} alt="Right" />
 
                     </div>

@@ -6,7 +6,7 @@ import './css/projects.scss';
 import { Link } from "react-router-dom";
 
 function Projects(props) {
-    const [slug, setSlug] = useState("/projects"); 
+    const [slug, setSlug] = useState("/projects");
     return (
         <div className="projects_div">
             <Header />
@@ -16,17 +16,17 @@ function Projects(props) {
                     autoPlay
                     loop
                     muted
-                    // style={{
-                    //     position: "relative",
-                    //     width: "1440px",
-                    //     left: "50%",
-                    //     top: "50%",
-                    //     height: "900px",
-                    //     objectFit: "cover",
-                    //     transform: "translate(-50%,-50%)",
-                    //     // opacity: 0.5
-                    //     // zIndex: "-1"
-                    // }}
+                // style={{
+                //     position: "relative",
+                //     width: "1440px",
+                //     left: "50%",
+                //     top: "50%",
+                //     height: "900px",
+                //     objectFit: "cover",
+                //     transform: "translate(-50%,-50%)",
+                //     // opacity: 0.5
+                //     // zIndex: "-1"
+                // }}
                 >
                     <source src={toAbsoluteUrl("/media/video/drone-reel.mp4")} type="video/mp4"></source>
                 </video>
@@ -36,31 +36,31 @@ function Projects(props) {
                 <div className="nav_button_div">
                     <div className="left_nav_span ">
                         <img className="left_nav_img" src={`${toAbsoluteUrl(`/media/icons/arrow-left-grey.svg`)}`} alt="Left" />
-                        <Link  to="/" > <span className="left_nav_label">Back to Overview</span></Link>
+                        <Link to="/marketing" > <span className="left_nav_label">Zurück zur Startseite</span></Link>
                     </div>
                     <div className="right_nav_span">
-                    <Link  to="/imagefilm" ><span className="right_nav_label">Next Project</span></Link>
+                        <Link to="/webdesign" ><span className="right_nav_label">Nächstes Projekt</span></Link>
                         <img className="right_nav_img" src={`${toAbsoluteUrl(`/media/icons/arrow-right-grey.svg`)}`} alt="Right" />
                     </div>
                 </div>
-                  
+
                 <div className="title_div">
                     <span className="sub_title">Drohnenaufnahmen</span>
                     <span className="title">Die Perfekte Sicht von oben</span>
                 </div>
 
-                 
-               
-              
+
+
+
             </div>
-            
+
             <div className="section_three">
                 <img className="line_break" src={`${toAbsoluteUrl(`/media/icons/line.svg`)}`} alt="Image" />
             </div>
-            
+
             <div className="section_four">
                 <div className="row_four">
-                <p> Wir bieten unsere Drohnenflüge zusammen mit unseren übrigen Dienstleistungen aber auch losgelöst von diesen an. Mit unserer breiten Auswahl von verschiedenen Drohnen können wir auch beinahe jede Anforderung reagieren und Filmreife Aufnahmen produzieren. Unsere Operator sind ausgebildet und haben Erfahrung auf allen gängigen Drohnentypen. </p>
+                    <p> Wir bieten unsere Drohnenflüge zusammen mit unseren übrigen Dienstleistungen aber auch losgelöst von diesen an. Mit unserer breiten Auswahl von verschiedenen Drohnen können wir auch beinahe jede Anforderung reagieren und Filmreife Aufnahmen produzieren. Unsere Operator sind ausgebildet und haben Erfahrung auf allen gängigen Drohnentypen. </p>
                 </div>
 
             </div>
@@ -69,27 +69,27 @@ function Projects(props) {
                 <img src={`${toAbsoluteUrl(`/media/images/giraffe.jpg`)}`} alt="Image" />
                 <img src={`${toAbsoluteUrl(`/media/images/zebra.jpg`)}`} alt="Image" />
             </div>
-            
+
             <div className="section_six">
                 <p className="mb-0">Start today</p>
                 <p className="contact_email">{process.env.REACT_APP_EMAIL}</p>
-                <Link 
-                        to="/contact-us"
-                        className={slug === "/contact-us" ? "selected" : null}
-                    > <img src={`${toAbsoluteUrl('/media/icons/arrow-right.svg')}`}  alt="Right" /></Link>
+                <Link
+                    to="/contact-us"
+                    className={slug === "/contact-us" ? "selected" : null}
+                > <img src={`${toAbsoluteUrl('/media/icons/arrow-right.svg')}`} alt="Right" /></Link>
             </div>
-            
+
             <div className="section_seven">
                 <span>
-                <Link className="footer-link" to="/">Portfolio</Link>
+                    <Link className="footer-link" to="/">Portfolio</Link>
 
-                    
-                <Link className="footer-link"  to="/solutions"> Our Solutions </Link>
-                <Link className="footer-link" to="/agency">   Our Agency</Link>
-                <a href="/" className="anchorFour "><img className="icon-width" src={`${toAbsoluteUrl('/media/images/icon_dark.svg')}`} alt={process.env.REACT_APP_NAME} /></a>
-                <Link className="footer-link" to="/contact-us">   Contact</Link>
-                <Link className="footer-link" to="/imprint">  Imprint</Link>
-                <Link className="footer-link" to="/imprint">Datasecure</Link>
+
+                    <Link className="footer-link" to="/solutions"> Our Solutions </Link>
+                    <Link className="footer-link" to="/agency">   Our Agency</Link>
+                    <a href="/" className="anchorFour "><img className="icon-width" src={`${toAbsoluteUrl('/media/images/icon_dark.svg')}`} alt={process.env.REACT_APP_NAME} /></a>
+                    <Link className="footer-link" to="/contact-us">   Contact</Link>
+                    <Link className="footer-link" to="/imprint">  Imprint</Link>
+                    <Link className="footer-link" to="/imprint">Datasecure</Link>
                 </span>
             </div>
         </div>

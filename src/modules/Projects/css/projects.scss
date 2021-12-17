@@ -45,6 +45,10 @@
     .footer-link{
         margin: 1%;
     }
+
+    .footer-link:hover{
+        color: $custom-secondary;;
+    }
     .ImageMarketing{
         width: 75%;
     }
@@ -131,23 +135,33 @@
     
     .section_two .left_nav_label {
         position: relative;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 18px;
         line-height: 58px;
         letter-spacing: -0.65px;
-        color: #1E2425;
-        opacity: 0.4;
+        color: black;
+        opacity: 0.6;
     }
     
     .section_two .right_nav_label {
         position: relative;
       
-        font-weight: 300;
+        font-weight: 400;
         font-size: 18px;
         line-height: 58px;
         letter-spacing: -0.65px;
-        color: #1E2425;
-        opacity: 0.4;
+        color: black;
+        opacity: 0.6;
+    }
+    .section_two .right_nav_label:hover {
+  
+        color: $custom-secondary;;
+       
+    }
+    .section_two .left_nav_label:hover {
+  
+        color: $custom-secondary;;
+       
     }
 
     .section_two .right_nav_img {
@@ -378,13 +392,13 @@
     
     .section_seven span a {
         text-decoration: none;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 16px;
         line-height: 58px;
         text-align: center;
         letter-spacing: -0.65px;
-        color: #1E2425;
-        opacity: 0.4;
+        color: black;
+        opacity: 0.6;
         position: relative;
     } 
     

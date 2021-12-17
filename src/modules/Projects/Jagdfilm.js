@@ -36,10 +36,10 @@ function Jagdfilm(props) {
                 <div className="nav_button_div">
                     <div className="left_nav_span ">
                         <img className="left_nav_img" src={`${toAbsoluteUrl(`/media/icons/arrow-left-grey.svg`)}`} alt="Left" />
-                        <Link to="/" > <span className="left_nav_label">vorheriges Projekt</span></Link>
+                        <Link to="/imagefilm" > <span className="left_nav_label">vorheriges Projekt</span></Link>
                     </div>
                     <div className="right_nav_span">
-                        <Link to="/projects-three" ><span className="right_nav_label">Nächstes Projekt</span></Link>
+                        <Link to="/productfilm" ><span className="right_nav_label">Nächstes Projekt</span></Link>
                         <img className="right_nav_img" src={`${toAbsoluteUrl(`/media/icons/arrow-right-grey.svg`)}`} alt="Right" />
                     </div>
                 </div>
