@@ -76,7 +76,7 @@ function Team(props) {
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close_team"></a>
                                 <span className="description_title">Hagen</span>
-                                <span className="description_text">Kameraspezialist für Outdoorprojekte. Louis bewährte sich auf zahlreichen Pirsch- und Ansitzjagden. Ob Safari in Afrika, Ansitzjagd im Deutschen Forst oder turbulente Nachsuchen: Kinoreifes Material ist garantiert!</span>
+                                <span className="description_text">Kameraspezialist für Outdoorprojekte. Hagen bewährte sich auf zahlreichen Pirsch- und Ansitzjagden. Ob Safari in Afrika, Ansitzjagd im Deutschen Forst oder turbulente Nachsuchen: Kinoreifes Material ist garantiert!</span>
                             </p>
                         </span>
 

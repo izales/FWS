@@ -9,7 +9,7 @@ function ProjectsThree(props) {
     const [slug, setSlug] = useState("/projects");
     return (
         <div className="projects_div">
-            <Header />
+            <Header theme="dark" vis=""></Header>
 
             <div className="section_one">
                 <video

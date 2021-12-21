@@ -310,21 +310,35 @@
     @media (max-width: 576px) {
    
     
-        .liPortfolio:active > .dropdown{
+        .liPortfolio > .dropdown{
             position: relative;
             visibility: inherit !important;
             display: flex;
             flex-direction: column;
             top: 0;
             right: 0;
+           
+           
          }
-         .dropdown2{
+         ul li {
+            font-size: 38px !important;
+            font-weight: 400!important;
+            letter-spacing: -1px !important;
+            line-height: 47px !important;
+        }
+        .pfeil_links{
+            display: none;
+        }
+         .liSolution .dropdown2 {
             visibility: inherit !important;
             position: relative;
             display: flex;
             flex-direction: column;
             top: 0;
             right: 0;
+       
+         
+            
          }
 
     }

@@ -8,6 +8,8 @@ import LogoComponent from "../Layout/LogoComponent";
 import NavComponent from "../Layout/NavComponent";
 import Solutions from "../Solutions/Solutions";
 import Team from "../Team/Team";
+import MediaQuery from 'react-responsive';
+import Header from "../Layout/Header";
 export const PortFolioTwo = withNavigationContext(() => {
     return (
         <div className="homepage_content p1" style={{ width: '100%', height: `100vh` }}>
@@ -43,7 +45,12 @@ export const PortFolioTwo = withNavigationContext(() => {
                 ></ImprintLink>
             </div>
 
-            <NavComponent theme="light" />
+            <MediaQuery minWidth={756}>
+                <NavComponent theme="light" />
+            </MediaQuery>
+            <MediaQuery maxWidth={755}>
+                <Header theme="light"></Header>
+            </MediaQuery>
         </div>
     );
 });
@@ -80,8 +87,12 @@ export const PortFolioOne = withNavigationContext(() => {
                 </video>
                 <ImprintLink theme="light"></ImprintLink>
             </div>
-
-            <NavComponent theme="light" />
+            <MediaQuery minWidth={756}>
+                <NavComponent theme="light" />
+            </MediaQuery>
+            <MediaQuery maxWidth={755}>
+                <Header></Header>
+            </MediaQuery>
         </div>
     );
 });
@@ -118,8 +129,12 @@ export const PortFolioThree = withNavigationContext(() => {
                 </video>
                 <ImprintLink theme="light"></ImprintLink>
             </div>
-
-            <NavComponent theme="light" />
+            <MediaQuery minWidth={756}>
+                <NavComponent theme="light" />
+            </MediaQuery>
+            <MediaQuery maxWidth={755}>
+                <Header></Header>
+            </MediaQuery>
         </div>
     );
 });

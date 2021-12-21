@@ -15,6 +15,13 @@ function Header(props) {
     let visSol = activeSol === false ? 'dontvisible' : '';
 
 
+
+    let navTheme = props.theme === 'dark' ? 'theme_dark' : 'theme_light';
+    let visLogo = props.vis === 'notvisible' ? 'notvisible' : null;
+
+
+
+
     useEffect(() => {
         setSlug(window.location.pathname);
     }, [window.location.pathname]);
@@ -23,12 +30,12 @@ function Header(props) {
         <div className="navBar">
             <span>
 
-                <a href="/"> <img className="logo_img" src={`${toAbsoluteUrl('/media/images/icon_dark.svg')}`} alt={process.env.REACT_APP_NAME} /></a>
+                <a href="/"> <img className={`${visLogo} logo_img`} src={`${toAbsoluteUrl('/media/images/icon_dark.svg')}`} alt={process.env.REACT_APP_NAME} /></a>
 
             </span>
             <span>
                 <input className="menu-btn" type="checkbox" id="menu-btn" />
-                <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
+                <label className="menu-icon" htmlFor="menu-btn"><span className={`${navTheme} navicon`}></span></label>
                 <ul className="menu">
                     <li className="nav_logo_li">
                         <Link to="/">

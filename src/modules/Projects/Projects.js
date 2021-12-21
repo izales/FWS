@@ -9,7 +9,7 @@ function Projects(props) {
     const [slug, setSlug] = useState("/projects");
     return (
         <div className="projects_div">
-            <Header />
+            <Header theme="dark" vis=""></Header>
 
             <div className="section_one">
                 <video
@@ -28,7 +28,7 @@ function Projects(props) {
                 //     // zIndex: "-1"
                 // }}
                 >
-                    <source src={toAbsoluteUrl("/media/video/homepage-banner-reel2.mp4")} type="video/mp4"></source>
+                    <source src={toAbsoluteUrl("/media/video/FSW-Media-Promo.mp4")} type="video/mp4"></source>
                 </video>
             </div>
 

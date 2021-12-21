@@ -4,7 +4,11 @@ import LogoComponent from '../Layout/LogoComponent';
 import NavComponent from '../Layout/NavComponent';
 import { toAbsoluteUrl } from '../../_helpers/AssetsHelpers';
 import ImprintLink from "../Layout/ImprintLink";
+import MediaQuery from 'react-responsive';
+import Header from "../Layout/Header";
 function ContactUs(props) {
+
+
 
     return (
         <div className="contact_us_div">
@@ -38,9 +42,13 @@ function ContactUs(props) {
                     </span>
                 </div>
             </div>
-
-            <NavComponent />
-            <ImprintLink theme="light"></ImprintLink>
+            <MediaQuery minWidth={756}>
+                <NavComponent theme="light" />
+            </MediaQuery>
+            <MediaQuery maxWidth={755}>
+                <Header theme="light" vis="notvisible"></Header>
+            </MediaQuery>
+            <ImprintLink theme="light" ></ImprintLink>
 
         </div>
     );
