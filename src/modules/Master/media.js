@@ -49,7 +49,7 @@ export const PortFolioTwo = withNavigationContext(() => {
                 <NavComponent theme="light" />
             </MediaQuery>
             <MediaQuery maxWidth={755}>
-                <Header theme="light"></Header>
+                <Header theme="light" vis="notvisible"></Header>
             </MediaQuery>
         </div>
     );
@@ -91,7 +91,7 @@ export const PortFolioOne = withNavigationContext(() => {
                 <NavComponent theme="light" />
             </MediaQuery>
             <MediaQuery maxWidth={755}>
-                <Header></Header>
+                <Header theme="light" vis="notvisible"></Header>
             </MediaQuery>
         </div>
     );
@@ -105,7 +105,7 @@ export const PortFolioThree = withNavigationContext(() => {
                 showBottomNav={true}
                 pageTitle="Portfolio"
                 subTitle="Imagefilm"
-                title={["Imagefilm für Jagdschule"]}
+                title={["Imagefilm für Jagdschulen"]}
 
 
             />
@@ -133,7 +133,7 @@ export const PortFolioThree = withNavigationContext(() => {
                 <NavComponent theme="light" />
             </MediaQuery>
             <MediaQuery maxWidth={755}>
-                <Header></Header>
+                <Header theme="light" vis="notvisible"></Header>
             </MediaQuery>
         </div>
     );

@@ -60,8 +60,8 @@ function Projects(props) {
 
             <div className="section_four">
                 <div className="row_four">
-                    <p> Imagefilm, Werbefilm, Marketingstrategie oder Webdesign: Bei uns erhält ihr Unternehmen kompetenteste Beratung, angepasst an die Jagd und auf die Zielgruppe der Jäger.
-                        Profitieren Sie von unserer breiten Palette verschiedenster Produkte, denn wir setzen auf eine ganzheitliche Marketinglösung, nicht auf einen Flickenteppich wie andere.
+                    <p> Imagefilm, Werbefilm, Marketingstrategie oder Webdesign: Bei uns erhält Ihr Unternehmen kompetenteste Beratung, angepasst an die Jagd und die Zielgruppe der Jäger.
+                        Profitieren Sie von unserer breiten Palette verschiedenster Produkte, denn wir setzen auf eine ganzheitliche Marketinglösung.
                         Auf den nächsten Seiten finden Sie einige unserer besten Arbeiten.
                         Wir sind überzeugt davon, Sie begeistern zu können!</p>
                 </div>

@@ -60,7 +60,7 @@ function Jagdfilm(props) {
 
             <div className="section_four">
                 <div className="row_four">
-                    <p>Eine unserer größten Stärken ist das Einfangen von spannenden Jagdmomenten. Diese sind vielfältig nutzbar: Als Erinnerung an ein großes Abenteuer, als Werbefilm für ihre Jagddienstleistungen oder für den Einsatz in Social Media. Diese Werke beeindrucken.  </p>
+                    <p>Eine unserer größten Stärken ist das Festhalten von aufregenden Jagdsituationen. Diese sind vielfältig nutzbar: Als Erinnerung an ein großes Abenteuer, als Werbefilm für Ihre Jagddienstleistungen oder für den Einsatz in Social Media. Diese Werke beeindrucken.  </p>
                 </div>
 
             </div>

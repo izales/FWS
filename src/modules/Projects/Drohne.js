@@ -46,7 +46,7 @@ function Projects(props) {
 
                 <div className="title_div">
                     <span className="sub_title">Drohnenaufnahmen</span>
-                    <span className="title">Die Perfekte Sicht von oben</span>
+                    <span className="title">Die perfekte Sicht von oben</span>
                 </div>
 
 
@@ -60,7 +60,7 @@ function Projects(props) {
 
             <div className="section_four">
                 <div className="row_four">
-                    <p> Wir bieten unsere Drohnenflüge zusammen mit unseren übrigen Dienstleistungen aber auch losgelöst von diesen an. Mit unserer breiten Auswahl von verschiedenen Drohnen können wir auch beinahe jede Anforderung reagieren und Filmreife Aufnahmen produzieren. Unsere Operator sind ausgebildet und haben Erfahrung auf allen gängigen Drohnentypen. </p>
+                    <p> Wir bieten unsere Drohnenflüge zusammen mit unseren übrigen Dienstleistungen, aber auch losgelöst von diesen an. Mit unserer breiten Auswahl an verschiedenen Drohnen können wir auf beinahe jede Anforderung reagieren und Filmreife Aufnahmen produzieren. Unsere Operator sind ausgebildet und haben Erfahrung mit allen gängigen Drohnentypen. </p>
                 </div>
 
             </div>

@@ -49,7 +49,7 @@ function Header(props) {
                         <ul className={`${visPort} mobiledropPort `}  >
                             <li><a href="/projects">Showreel</a></li>
                             <li><a href="/projects-two">Retailer</a></li>
-                            <li><a href="/projects-three">Jagdschule</a></li>
+                            <li><a href="/projects-three">Jagdschulen</a></li>
 
                         </ul>
                     </li>

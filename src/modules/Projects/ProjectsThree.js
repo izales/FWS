@@ -47,7 +47,7 @@ function ProjectsThree(props) {
 
                 <div className="title_div">
                     <span className="sub_title">Imagefilm</span>
-                    <span className="title">Imagefilm für Jagdschule</span>
+                    <span className="title">Imagefilm für Jagdschulen</span>
                 </div>
 
 
@@ -61,7 +61,7 @@ function ProjectsThree(props) {
 
             <div className="section_four">
                 <div className="row_four">
-                    <p> In diesem Imagefilm wurden der Unterricht mit Herrn Wiese dargestellt, so konnten sich die zukünftigen Teilnehmer ein Bild von den Unterrichtseinheiten sowie Herrn Wieses Art machen. Wir verbanden emotionale Werte und wirtschaftliche Fakten zu einer filmischen Visitenkarte. Authentisch und unverwechselbar. Denn jedes Unternehmen ist eine Geschichte für sich. </p>
+                    <p> In diesem Imagefilm wurde der Unterricht mit Herrn Wiese dargestellt, so konnten sich die zukünftigen Teilnehmer ein Bild von den Unterrichtseinheiten sowie Herrn Wieses Art machen. Wir verbanden emotionale Werte und wirtschaftliche Fakten zu einer filmischen Visitenkarte. Authentisch und unverwechselbar. Denn jedes Unternehmen ist eine Geschichte für sich. </p>
                 </div>
 
             </div>

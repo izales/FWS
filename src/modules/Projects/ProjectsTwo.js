@@ -60,7 +60,7 @@ function Projects(props) {
 
             <div className="section_four">
                 <div className="row_four">
-                    <p> Den Verkauf steigern, eine Botschaft verbreiten oder Ihre Marke bekannt machen. Es gibt viele gute Gründe, einen Werbefilm zu produzieren. Dabei gilt vor allem: Wer schlau wirbt, bleibt im Kopf. An Gute Ideen werden erinnert und online geteilt.
+                    <p> Den Verkauf steigern, eine Botschaft verbreiten oder Ihre Marke bekannt machen. Es gibt viele gute Gründe, einen Werbefilm zu produzieren. Dabei gilt vor allem: Wer schlau wirbt, bleibt im Kopf. Gute Ideen werden erinnert und online geteilt.
                         Deshalb entwickeln wir für Sie kreative Konzepte, die auf Ihre Zielgruppe und Ihre Marke zugeschnitten sind. </p>
                 </div>
 

@@ -43,7 +43,7 @@ function Projects(props) {
 
             <div className="section_four">
                 <div className="row_four">
-                    <p>Besucher einer Webseite treffen innerhalb von rund 3 Sekunden die Entscheidung, ob sie die Seite wieder verlassen oder sich näher informieren. Wie auch im echten Leben zählt hier der erste Eindruck. Wir erarbeiten mit Ihnen zusammen ein ganzheitliches Marketingkonzept – wer ist Ihre Zielgruppe und wie können wir diese am besten überzeugen? Unsere Webseiten haben das Ziel neue Kunden für Sie zu generieren. </p>
+                    <p>Besucher einer Webseite treffen innerhalb von rund 3 Sekunden die Entscheidung, ob Sie die Seite wieder verlassen oder sich näher informieren. Wie auch im echten Leben zählt hier der erste Eindruck. Wir erarbeiten mit Ihnen zusammen ein ganzheitliches Marketingkonzept – wer ist Ihre Zielgruppe und wie können wir diese am besten überzeugen? Unsere Webseiten haben das Ziel neue Kunden für Sie zu generieren. </p>
                 </div>
 
             </div>
