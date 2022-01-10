@@ -22,7 +22,7 @@ function ContactUs(props) {
             <div className="contact_us_body_div">
                 <div className="title_div">
                     <span className="sub_title">Contact Us</span>
-                    <span className="title">Start your project with {process.env.REACT_APP_NAME}</span>
+                    <span className="title">Starten Sie Ihr nächstes Projekt mit uns</span>
                 </div>
 
                 <div className="contact_details_div">

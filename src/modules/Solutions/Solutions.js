@@ -76,8 +76,8 @@ function Solutions(props) {
                             <p className={`icon_label ${active ? 'showLabel' : null}`}>First Contact</p>
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close"></a>
-                                <span className="description_title">First Contact</span>
-                                <span className="description_text">In our first meeting we'd like to get to know you and your business. We determine the goals of your campaign and gather first ideas for your video. To ensure the measurement of the campaign we need some business insights. Everything is confidential.</span>
+                                <span className="description_title">Erstkontakt</span>
+                                <span className="description_text">Bei unserem ersten Treffen möchten wir Sie und Ihr Unternehmen kennenlernen. Wir legen die Ziele Ihrer Kampagne fest und sammeln erste Ideen für Ihr Video. Um die Messung der Kampagne zu gewährleisten, benötigen wir einige Geschäftseinblicke. Alles ist vertraulich.</span>
                             </p>
                         </span>
 
@@ -86,8 +86,8 @@ function Solutions(props) {
                             <p className={`icon_label ${active ? 'showLabel' : null}`}>Concept design</p>
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close"></a>
-                                <span className="description_title">Concept design</span>
-                                <span className="description_text">Our creative and marketing department creates a draft of your business, tailored to the goals and values of your company. The goal: To stand out in a loud and connected online world. You receive an offer with the various drafts.</span>
+                                <span className="description_title">Konzeptdesign</span>
+                                <span className="description_text">Unsere Kreativ- und Marketingabteilung erstellt einen Entwurf für Ihr Unternehmen, der auf die Ziele und Werte Ihres Unternehmens zugeschnitten ist. Das Ziel: Auffallen in einer lauten und vernetzten Online-Welt. Sie erhalten ein Angebot mit den verschiedenen Entwürfen.</span>
                             </p>
                         </span>
 
@@ -96,9 +96,9 @@ function Solutions(props) {
                             <p className={`icon_label ${active ? 'showLabel' : null}`}>Production</p>
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close"></a>
-                                <span className="description_title">Production</span>
+                                <span className="description_title">Produktion</span>
 
-                                <span className="description_text">After you decided to work with us, we begin to schedule the shoots, gather all the information required for your video and start booking actors and speakers. You are in the loop of all steps, nothing happens without your consent.</span>
+                                <span className="description_text">Nachdem Sie sich für eine Zusammenarbeit mit uns entschieden haben, beginnen wir mit der Planung der Dreharbeiten, sammeln alle für Ihr Video erforderlichen Informationen und beginnen mit der Buchung von Schauspielern und Sprechern. Sie sind bei allen Schritten dabei, nichts geschieht ohne Ihre Zustimmung.</span>
                             </p>
                         </span>
                     </div>
@@ -109,10 +109,8 @@ function Solutions(props) {
                             <p className={`icon_label ${active ? 'showLabel' : null}`}>Post-production</p>
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close"></a>
-                                <span className="description_title">Post-production</span>
-                                <span className="description_text">If you opted in for marketing services, we will begin to optimize your already existing social media presence, or create it from scratch.
-                                    Now its all about post-production: the various scenes get cut, animations are getting created and your video becomes reality. After you approved the raw cut, we optimize the colors and scene appearance to ensure your film stands out!
-                                    This step can be the most time consuming, but it is really worth the effort!</span>
+                                <span className="description_title">Post-Produktion</span>
+                                <span className="description_text">Wenn Sie sich für Marketingdienste entschieden haben, beginnen wir mit der Optimierung Ihrer bereits bestehenden Social-Media-Präsenz oder erstellen sie von Grund auf neu. Nun geht es an die Postproduktion: Die verschiedenen Szenen werden geschnitten, Animationen werden erstellt und Ihr Video wird Realität. Nachdem Sie dem Rohschnitt zugestimmt haben, optimieren wir die Farben und das Erscheinungsbild der Szenen, um sicherzustellen, dass Ihr Film heraussticht! Dieser Schritt kann der zeitaufwendigste sein, aber er ist die Mühe wert!</span>
 
                             </p>
 
@@ -123,14 +121,13 @@ function Solutions(props) {
                             <p className={`icon_label ${active ? 'showLabel' : null}`}>Delivery</p>
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close"></a>
-                                <span className="description_title">Delivery</span>
-                                <span className="description_text">After everything is done and you approved the video, it gets adapted to all the common social media platforms: Instagram, YouTube, Facebook, LinkedIn. We make sure that your message gets transported on any medium.
-                                    If you booked marketing services, we start the campaigns and monitor them.</span>
+                                <span className="description_title">Auslieferung</span>
+                                <span className="description_text">Nachdem alles erledigt ist und Sie das Video genehmigt haben, wird es an alle gängigen Social-Media-Plattformen angepasst: Instagram, YouTube, Facebook, LinkedIn. Wir sorgen dafür, dass Ihre Botschaft auf jedem Medium ankommt. Wenn Sie Marketingdienstleistungen gebucht haben, starten wir die Kampagnen und überwachen sie.</span>
                             </p>
                         </span>
 
                         <span className="pagination_span">
-                            <p className="mb-0">Start today</p>
+                            <p className="mb-0">Schreib uns</p>
                             <p className="contact_email">{process.env.REACT_APP_EMAIL}</p>
                             <Link
                                 href="/contact-us"
