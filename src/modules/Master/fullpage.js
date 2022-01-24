@@ -26,66 +26,66 @@ export default withNavigationContext(() => {
     }, [window.location.pathname]);
 
 
-    
-    if (slug == '/solutions'  ) {
-      
-     
-        
-       const buttonStyle = {
-       marginTop: '0.5rem',
-       fontSize: '20px',
-        color: 'black'
-       };
 
-    return (
-        <Slider
-            className="awesome-slider"
-            animation="scaleOutAnimation"
-            cssModule={[CoreStyles, AwesomeSliderStyles]}
-            organicArrows={false}
-            buttonContentRight={ [ <p className="buttonStyleRight" style={buttonStyle}>NEXT</p>,<hr className="lineStyleRight lineColor1"></hr> ]}
-            buttonContentLeft={[ <hr className="lineStyleLeft lineColor1" ></hr>,<p className="buttonStyleLeft" style={buttonStyle}>PREV</p>,]}
-            media={media}
-            startupScreen={<SplashScreen />}
-            startupDelay={500}
-            transitionDelay={100}
-            // onTransitionEnd={(e) => {
-            //     var video = e.currentSlide.querySelector("video");
-            //     if (video !== null) {
-            //         video.load();
-            //     }
-            // }}
-        />
-    );
-    } else {
-     
-         
-        
-           const buttonStyle = {
-           marginTop: '0.5rem',
-           fontSize: '20px',
-           color: 'white'
-            
-           };
-    
+    if (slug == '/solutions') {
+
+
+
+        const buttonStyle = {
+            marginTop: '0.5rem',
+            fontSize: '20px',
+            color: 'black'
+        };
+
         return (
             <Slider
                 className="awesome-slider"
                 animation="scaleOutAnimation"
                 cssModule={[CoreStyles, AwesomeSliderStyles]}
                 organicArrows={false}
-                buttonContentRight={ [ <p className="buttonStyleRight" style={buttonStyle}>NEXT</p>,<hr  className=" lineColor2 lineStyleRight"></hr> ]}
-                buttonContentLeft={[ <hr className="lineColor2 lineStyleLeft" ></hr>,<p className="buttonStyleLeft" style={buttonStyle}>PREV</p>,]}
+                buttonContentRight={[<p className="buttonStyleRight" style={buttonStyle}>WEITER</p>, <hr className="lineStyleRight lineColor1"></hr>]}
+                buttonContentLeft={[<hr className="lineStyleLeft lineColor1" ></hr>, <p className="buttonStyleLeft" style={buttonStyle}>ZURÜCK</p>,]}
                 media={media}
                 startupScreen={<SplashScreen />}
                 startupDelay={500}
                 transitionDelay={100}
-                // onTransitionEnd={(e) => {
-                //     var video = e.currentSlide.querySelector("video");
-                //     if (video !== null) {
-                //         video.load();
-                //     }
-                // }}
+            // onTransitionEnd={(e) => {
+            //     var video = e.currentSlide.querySelector("video");
+            //     if (video !== null) {
+            //         video.load();
+            //     }
+            // }}
+            />
+        );
+    } else {
+
+
+
+        const buttonStyle = {
+            marginTop: '0.5rem',
+            fontSize: '20px',
+            color: 'white'
+
+        };
+
+        return (
+            <Slider
+                className="awesome-slider"
+                animation="scaleOutAnimation"
+                cssModule={[CoreStyles, AwesomeSliderStyles]}
+                organicArrows={false}
+                buttonContentRight={[<p className="buttonStyleRight" style={buttonStyle}>WEITER</p>, <hr className=" lineColor2 lineStyleRight"></hr>]}
+                buttonContentLeft={[<hr className="lineColor2 lineStyleLeft" ></hr>, <p className="buttonStyleLeft" style={buttonStyle}>ZURÜCK</p>,]}
+                media={media}
+                startupScreen={<SplashScreen />}
+                startupDelay={500}
+                transitionDelay={100}
+            // onTransitionEnd={(e) => {
+            //     var video = e.currentSlide.querySelector("video");
+            //     if (video !== null) {
+            //         video.load();
+            //     }
+            // }}
             />
         );
 

@@ -53,13 +53,12 @@ function Agency(props) {
             <div className="agency_body_div">
                 <div className="title_div">
                     <span className="sub_title">Full Service Agency</span>
-                    <span className="title">Our Agency</span>
+                    <span className="title">Über uns</span>
                 </div>
 
                 <div className="description_div">
                     <p className="description_one">
-                        We do not sell videos, we provide solutions! We analyze your goals, business and products to create a sustainable and extraordinary experience for you and your target audience. Side-by-Side we develop the message you want to deliver.
-                        Do not hesitate anymore, contact us now for an appointment
+                        Wir verkaufen keine Videos, wir bieten Lösungen! Wir analysieren Ihre Ziele, Ihr Unternehmen und Ihre Produkte, um ein nachhaltiges und außergewöhnliches Erlebnis für Sie und Ihr Zielpublikum zu schaffen. Seite an Seite entwickeln wir die Botschaft, die Sie vermitteln wollen. Zögern Sie nicht und kontaktieren Sie uns jetzt für einen Termin.
                     </p>
 
 
