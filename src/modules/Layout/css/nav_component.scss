@@ -1,3 +1,4 @@
+
 .nav_links_div {
     margin: 56px 60px 0 0;
     font-family: "Bodoni 72 Oldstyle";
@@ -17,7 +18,7 @@
         margin-left: 2rem;
     }
     .visible {
-        display: flex;
+        visibility: visible !important;
     }
     .nav_logo_li {
         cursor: pointer;
@@ -83,7 +84,7 @@
         
     }
 
-    .liPortfolio:hover > .dropdown  {
+    /*.liPortfolio:hover > .dropdown  {
       opacity: 1;
       visibility: visible;
       
@@ -93,6 +94,8 @@
         visibility: visible;
        
       }
+*/
+    
       .liAgency:hover > .dropdown3  {
         opacity: 1;
         visibility: visible;
@@ -133,12 +136,13 @@
             visibility: hidden;
         }
 
-    .dontvisible{
-        display: none;
-        visibility: hidden;
-        opacity: 0;
-      }
-
+   
+        .dontvisible{
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+          }
+        
         
     ul li a {
         text-decoration: none;

@@ -51,7 +51,7 @@ function LogoComponent(props) {
                 <span className="sub_title">{props.subTitle}</span>
                 <span className="title">{props.title}</span>
                 <span className="link_title">
-                    <span>Explore Project</span>
+                    <span>mehr Projekte</span>
                     <img src={`${toAbsoluteUrl(`/media/icons/path.svg`)}`} alt="Right" />
                 </span>
             </a>}

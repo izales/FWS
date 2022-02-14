@@ -15,13 +15,13 @@ function ContactUs(props) {
 
             <LogoComponent
                 theme="light"
-                pageTitle="Contact Us"
+                pageTitle="Kontakt"
             />
 
 
             <div className="contact_us_body_div">
                 <div className="title_div">
-                    <span className="sub_title">Contact Us</span>
+                    <span className="sub_title">Kontakt</span>
                     <span className="title">Starten Sie Ihr nächstes Projekt mit uns</span>
                 </div>
 

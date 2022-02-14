@@ -16,31 +16,53 @@ function NavComponent(props) {
 
 
 
+
+    const [hoverRefPort, isHoveredPort] = useHover();
+    const [hoverRefSol, isHoveredSol] = useHover();
+
+   // Hook
+function useHover() {
+  const [value, setValue] = useState(false);
+  const ref = useRef(null);
+  const handleMouseOver = () => setValue(true);
+  const handleMouseOut = () => setValue(false);
+  useEffect(
+    () => {
+      const node = ref.current;
+      if (node) {
+        node.addEventListener("mouseover", handleMouseOver);
+        node.addEventListener("mouseout", handleMouseOut);
+        return () => {
+          node.removeEventListener("mouseover", handleMouseOver);
+          node.removeEventListener("mouseout", handleMouseOut);
+        };
+      }
+    },
+    [ref.current] // Recall only if ref changes
+  );
+  return [ref, value];
+}
+
+
+
     const [hoveredPort, setHoveredPort] = useState(false);
     const toggleHoverPort = () => setHoveredPort(!hoveredPort);
-    let visOne = hoveredPort === true ? 'visible' : '';
-    let visSol2 = hoveredPort === true ? 'dontvisible' : '';
+   // let visOne = hoveredPort === true ? 'visible' : '';
+   // let visSol2 = hoveredPort === true ? 'dontvisible' : '';
 
 
 
     const [hoveredSolution, setHoveredSolution] = useState(false);
     const toggleHoverSolution = () => setHoveredSolution(!hoveredSolution);
-    let visPort = hoveredSolution === true ? 'dontvisible' : '';
+    //let visPort = hoveredSolution === true ? 'dontvisible' : '';
 
 
-    const [hoveredAgency, setHoveredAgency] = useState(false);
-    const toggleHoverAgency = () => setHoveredAgency(!hoveredAgency);
-    let visSol = hoveredAgency === true ? 'dontvisible' : '';
-
-    const [hoveredContact, setHoveredContact] = useState(false);
-    const toggleHoverContact = () => setHoveredContact(!hoveredContact);
-    let visAge = hoveredContact === true ? 'dontvisible' : '';
 
     useEffect(() => {
         setSlug(window.location.pathname);
     }, [window.location.pathname]);
 
-
+  
 
     const PortRef = useRef(0);
     function toggleAccordion() {
@@ -64,7 +86,7 @@ function NavComponent(props) {
                     </Link>
                 </li>
 
-                <li className="liPortfolio">
+                <li ref={hoverRefPort} className="liPortfolio">
                     <Link
                         href={PortLink}
                         className={(slug === "" || slug === "/" || slug === "/portfolio-two" || slug === "/portfolio-three") ? "selected" : null}
@@ -72,7 +94,7 @@ function NavComponent(props) {
                         Portfolio
                     </Link>
 
-                    <ul onMouseOver={toggleHoverPort} onMouseLeave={toggleHoverPort} className={`${visPort}  dropdown`}>
+                    <ul  className={`${isHoveredPort ? 'visible' : ''} ${isHoveredSol ? 'dontvisible' : ''}  dropdown`}>
                         <li><a href="/projects">Showreel</a><img className='pfeil_links' src={`${toAbsoluteUrl(`/media/icons/linker-pfeil-schwarze-dreiecksform.svg`)}`} alt="Right" /></li>
                         <li><a href="/projects-two">Retailer</a></li>
                         <li><a href="/projects-three">Jagdschulen</a></li>
@@ -80,14 +102,14 @@ function NavComponent(props) {
                 </li>
 
 
-                <li onMouseOver={toggleHoverSolution} onMouseLeave={toggleHoverSolution} className="liSolution">
+                <li  ref={hoverRefSol} className="liSolution ">
                     <Link
                         href="/solutions"
                         className={slug === "/solutions" ? "selected" : null}
                     >
                         <span className='pfeil-span'>Solutions</span>
                     </Link>
-                    <ul className={`${visSol}  dropdown2`}>
+                    <ul  className={`${isHoveredSol ? 'visible' : ''}   dropdown2`}>
 
                         <li><a href="/imagefilm">Imagefilm</a><img className='pfeil_links' src={`${toAbsoluteUrl(`/media/icons/linker-pfeil-schwarze-dreiecksform.svg`)}`} alt="Right" /></li>
                         <li><a href="/jagdfilm">Jagdfilm</a></li>
@@ -98,7 +120,7 @@ function NavComponent(props) {
                     </ul>
                 </li>
 
-                <li onMouseOver={toggleHoverAgency} onMouseLeave={toggleHoverAgency} className="liAgency">
+                <li  className="liAgency">
                     <Link
                         href="/agency"
                         className={slug === "/agency" ? "selected" : null}
@@ -107,12 +129,12 @@ function NavComponent(props) {
                     </Link>
 
                 </li>
-                <li onMouseEnter={toggleHoverContact} onMouseLeave={toggleHoverContact} className="liContact">
+                <li  className="liContact">
                     <Link
                         href="/contact-us"
                         className={slug === "/contact-us" ? "selected" : null}
                     >
-                        Contact Us
+                        Kontakt
                     </Link>
 
                 </li>

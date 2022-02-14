@@ -66,7 +66,7 @@ function Solutions(props) {
             <div className="solutions_body_div">
                 <div className="title_div">
                     <span className="sub_title">Full Service Agency</span>
-                    <span className="title">Our Solutions</span>
+                    <span className="title">Unsere Lösungen</span>
                 </div>
 
                 <div className="icons_div">
