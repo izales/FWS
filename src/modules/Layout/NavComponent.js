@@ -107,7 +107,7 @@ function useHover() {
                         href="/solutions"
                         className={slug === "/solutions" ? "selected" : null}
                     >
-                        <span className='pfeil-span'>Unsere Lösungen</span>
+                        <span className='pfeil-span'>Lösungen</span>
                     </Link>
                     <ul  className={`${isHoveredSol ? 'visible' : ''}   dropdown2`}>
 
