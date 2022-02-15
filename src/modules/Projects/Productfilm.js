@@ -45,7 +45,7 @@ function Productfilm(props) {
                 </div>
 
                 <div className="title_div">
-                    <span className="sub_title">Produktfilm</span>
+                    <span className="sub_title">Produktvideos</span>
                     <span className="title">Für Ihren Online Verkauf<br></br></span>
                 </div>
 

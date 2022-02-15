@@ -107,13 +107,13 @@ function useHover() {
                         href="/solutions"
                         className={slug === "/solutions" ? "selected" : null}
                     >
-                        <span className='pfeil-span'>Solutions</span>
+                        <span className='pfeil-span'>Unsere Lösungen</span>
                     </Link>
                     <ul  className={`${isHoveredSol ? 'visible' : ''}   dropdown2`}>
 
                         <li><a href="/imagefilm">Imagefilm</a><img className='pfeil_links' src={`${toAbsoluteUrl(`/media/icons/linker-pfeil-schwarze-dreiecksform.svg`)}`} alt="Right" /></li>
                         <li><a href="/jagdfilm">Jagdfilm</a></li>
-                        <li><a href="/productfilm">Produktfilm</a></li>
+                        <li><a href="/productfilm">Produktvideos</a></li>
                         <li><a href="/marketing">Marketing</a></li>
                         <li><a href="/drohne">Drohnen</a></li>
                         <li><a href="/webdesign">Webdesign</a></li>

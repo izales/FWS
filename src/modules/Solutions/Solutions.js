@@ -73,7 +73,7 @@ function Solutions(props) {
                     <div className="icons_div_one">
                         <span className="icon_span">
                             <img onClick={toggleClass} className={` ${active ? 'showImg' : null}`} src={`${toAbsoluteUrl('/media/icons/advice.svg')}`} alt="Erstgespräch" />
-                            <p className={`icon_label ${active ? 'showLabel' : null}`}>First Contact</p>
+                            <p className={`icon_label ${active ? 'showLabel' : null}`}>Erstkontakt</p>
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close"></a>
                                 <span className="description_title">Erstkontakt</span>
@@ -83,7 +83,7 @@ function Solutions(props) {
 
                         <span className="icon_span">
                             <a onClick={openPop}></a> <img onClick={toggleClass} className={` ${active ? 'showImg' : null}`} src={`${toAbsoluteUrl('/media/icons/creativity.svg')}`} alt="Konzept" />
-                            <p className={`icon_label ${active ? 'showLabel' : null}`}>Concept design</p>
+                            <p className={`icon_label ${active ? 'showLabel' : null}`}>Konzeptdesign</p>
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close"></a>
                                 <span className="description_title">Konzeptdesign</span>
@@ -93,7 +93,7 @@ function Solutions(props) {
 
                         <span className="icon_span">
                             <a onClick={openPop}><img onClick={toggleClass} className={` ${active ? 'showImg' : null}`} src={`${toAbsoluteUrl('/media/icons/video.svg')}`} alt="Produktion" /> </a>
-                            <p className={`icon_label ${active ? 'showLabel' : null}`}>Production</p>
+                            <p className={`icon_label ${active ? 'showLabel' : null}`}>Produktion</p>
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close"></a>
                                 <span className="description_title">Produktion</span>
@@ -106,7 +106,7 @@ function Solutions(props) {
                     <div className="icons_div_two">
                         <span className="icon_span">
                             <a onClick={openPop}> <img onClick={toggleClass} className={` ${active ? 'showImg' : null}`} src={`${toAbsoluteUrl('/media/icons/film-editing.svg')}`} alt="Post-Produktion" /> </a>
-                            <p className={`icon_label ${active ? 'showLabel' : null}`}>Post-production</p>
+                            <p className={`icon_label ${active ? 'showLabel' : null}`}>Post-Produktion</p>
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close"></a>
                                 <span className="description_title">Post-Produktion</span>
@@ -118,7 +118,7 @@ function Solutions(props) {
 
                         <span className="icon_span">
                             <img onClick={toggleClass} className={` ${active ? 'showImg' : null}`} src={`${toAbsoluteUrl('/media/icons/cloud-computing.svg')}`} alt="Übergabe" />
-                            <p className={`icon_label ${active ? 'showLabel' : null}`}>Delivery</p>
+                            <p className={`icon_label ${active ? 'showLabel' : null}`}>Auslieferung</p>
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close"></a>
                                 <span className="description_title">Auslieferung</span>
