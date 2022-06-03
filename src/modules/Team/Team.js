@@ -71,12 +71,12 @@ function Team(props) {
                         </span>
 
                         <span className="icon_span space-right">
-                            <a onClick={openPop}></a> <img onClick={toggleClass} className={`round ${active ? 'showImg' : null}`} src={`${toAbsoluteUrl('/media/images/hagen-4.jpg')}`} alt="Luia" />
-                            <p className="icon_label_team ">Hagen</p>
+                            <a onClick={openPop}></a> <img onClick={toggleClass} className={`round ${active ? 'showImg' : null}`} src={`${toAbsoluteUrl('/media/images/max3.jpg')}`} alt="Luia" />
+                            <p className="icon_label_team ">Maximilian</p>
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close_team"></a>
-                                <span className="description_title">Hagen</span>
-                                <span className="description_text">Verantwortlich für die Planung und Durchführung von Video- und Websiteprojekten.  </span>
+                                <span className="description_title">Maximilian</span>
+                                <span className="description_text">Verantwortlich für die Planung und Durchführung von Videoprojekten sowie für allen jagdlichen Content.</span>
                             </p>
                         </span>
 
@@ -96,12 +96,12 @@ function Team(props) {
                         </span>
 
                         <span className="icon_span">
-                            <img onClick={toggleClass} className={` round ${active ? 'showImg' : null}`} src={`${toAbsoluteUrl('/media/images/mathis.jpeg')}`} alt="Mathis" />
-                            <p className={`icon_label_team ${active ? 'showLabel' : null}`}>Mathis</p>
+                            <img onClick={toggleClass} className={` round ${active ? 'showImg' : null}`} src={`${toAbsoluteUrl('/media/images/julia.jpg')}`} alt="Mathis" />
+                            <p className={`icon_label_team ${active ? 'showLabel' : null}`}>Julia</p>
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close_team"></a>
-                                <span className="description_title">Mathis</span>
-                                <span className="description_text ">Mathis hat mit seinen mehr als 10 Jahren Berufserfahrung ein Auge für Details wie kein anderer. In der Post-Produktion vermag er es jeden Pixel farblich anzupassen um so ein fesselndes Gesamtkunstwerk zu erschaffen.</span>
+                                <span className="description_title">Julia</span>
+                                <span className="description_text ">Verantwortlich für das Marketing, die Planung und Durchführung von Webdesign Projekten. Julia plant nutzerzentrierte Vorgehen und sorgt für eine optimale User Experience. </span>
                             </p>
                         </span>
 
