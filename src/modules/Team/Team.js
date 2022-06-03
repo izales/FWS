@@ -71,7 +71,7 @@ function Team(props) {
                         </span>
 
                         <span className="icon_span space-right">
-                            <a onClick={openPop}></a> <img onClick={toggleClass} className={`round ${active ? 'showImg' : null}`} src={`${toAbsoluteUrl('/media/images/max3.jpg')}`} alt="Luia" />
+                            <a onClick={openPop}></a> <img onClick={toggleClass} className={`round ${active ? 'showImg' : null}`} src={`${toAbsoluteUrl('/media/images/max3.jpg')}`} alt="Max" />
                             <p className="icon_label_team ">Maximilian</p>
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close_team"></a>
@@ -96,7 +96,7 @@ function Team(props) {
                         </span>
 
                         <span className="icon_span">
-                            <img onClick={toggleClass} className={` round ${active ? 'showImg' : null}`} src={`${toAbsoluteUrl('/media/images/julia.jpg')}`} alt="Mathis" />
+                            <img onClick={toggleClass} className={` round ${active ? 'showImg' : null}`} src={`${toAbsoluteUrl('/media/images/julia.jpg')}`} alt="Julia" />
                             <p className={`icon_label_team ${active ? 'showLabel' : null}`}>Julia</p>
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close_team"></a>
