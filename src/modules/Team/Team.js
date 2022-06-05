@@ -84,12 +84,12 @@ function Team(props) {
 
                     <div className="icons_div_two space-right">
                         <span className="icon_span ">
-                            <a onClick={openPop}> <img onClick={toggleClass} className={` round ${active ? 'showImg' : null}`} src={`${toAbsoluteUrl('/media/images/wesley.jpeg')}`} alt="Wesley" /> </a>
-                            <p className={`icon_label_team ${active ? 'showLabel' : null}`}>Wesley</p>
+                            <a onClick={openPop}> <img onClick={toggleClass} className={` round ${active ? 'showImg' : null}`} src={`${toAbsoluteUrl('/media/images/mathis.jpeg')}`} alt="Wesley" /> </a>
+                            <p className={`icon_label_team ${active ? 'showLabel' : null}`}>Mathis</p>
                             <p ref={ref} className={`icon_description ${active ? 'hidden' : null}`}>
                                 <a onClick={toggleClass} className="close_team"></a>
-                                <span className="description_title">Wesley</span>
-                                <span className="description_text">Berufsjäger aus England mit 30 Jahren Erfahrung. Er verbindet Waidmännisches Denken mit moderner Kameraarbeit.</span>
+                                <span className="description_title">Mathis</span>
+                                <span className="description_text">Mathis hat mit seinen mehr als 10 Jahren Berufserfahrung ein Auge für Details wie kein anderer. In der Post-Produktion vermag er es jeden Pixel farblich anzupassen um so ein fesselndes Gesamtkunstwerk zu erschaffen.</span>
 
                             </p>
 
